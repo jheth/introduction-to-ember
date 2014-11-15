@@ -78,6 +78,18 @@ module.exports = (grunt) ->
                 }]
 
         
+        buildcontrol:
+
+            options:
+                dir: 'dist'
+                commit: true
+                push: true
+                message: 'Built from %sourceCommit% on branch %sourceBranch%'
+            pages:
+                options:
+                    remote: 'git@github.com:jheth/introduction-to-ember.git'
+                    branch: 'gh-pages'
+
 
 
     # Load all grunt tasks.
@@ -126,6 +138,12 @@ module.exports = (grunt) ->
         ]
 
     
+    grunt.registerTask 'deploy',
+        'Deploy to Github Pages', [
+            'dist'
+            'buildcontrol'
+        ]
+
 
     # Define default task.
     grunt.registerTask 'default', [
