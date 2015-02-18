@@ -3,9 +3,11 @@
     "what-is-emberjs.md",
     "other-frameworks.md",
     "whos-using-it.md",
+    "ember-cli.md",
     "ember-inspector.md",
     "concepts.md",
     "conventions.md",
+    "project-structure.md",
     "router.md",
     "routes.md",
     "controller.md",
@@ -19,6 +21,7 @@
     "bind-attributes.md",
     "class-binding.md",
     "examples.md",
+    "ember-20.md",
     "resources.md",
     "reusable-libraries.md"
 ]

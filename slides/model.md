@@ -3,12 +3,6 @@
 A model is an object that stores persistent state.
 
 ```javascript
-/* Ember Object */
-App.Post = Ember.Object.extend();
-var post = App.Post.create({title: 'New Post', author: 'Joe'});
-```
-
-```javascript
 /* Ember Data Model */
 App.Post = DS.Model.extend({
   title: DS.attr('string'),
